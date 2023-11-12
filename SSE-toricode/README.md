@@ -35,7 +35,7 @@ To run a simulation you will need to use the `run.sh` script and three input fil
 8, 0.5
 10000, 1000000, 10
 ```
-The first line is `L, N, S` and the second is `therm_cycles, mc_cycles, n_bins`. `L` is the number of unit cells, `S` is the quantum spin number.
+The first line is `L, S` and the second is `therm_cycles, mc_cycles, n_bins`. `L` is the number of unit cells, `S` is the quantum spin number.
 
 The second input file is `beta.in` which has the following structure
 ```
