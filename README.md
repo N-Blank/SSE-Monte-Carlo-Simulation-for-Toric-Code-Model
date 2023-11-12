@@ -5,7 +5,7 @@ The Hamiltonian of the simulated system is given by
 
 $$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p $$
 
-where $\Delta$ $$A_s = \prod_{j\in star(s)} \sigma _j^x$$,  $$B_p = \prod_{j\in boundary(p)} \sigma _j^z$$. It is obviously the traditional toricode model.
+where $A_s = \prod_{j\in star(s)} \sigma_j^x$,  $B_p = \prod_{j\in boundary(p)} \sigma_j^z$. It is obviously the traditional toricode model.
 The SSE method is the power series expansion of the partition function 
 
 $$ Z = \text{Tr}\{e^{-\beta H}\} = \sum_{\alpha} \sum_{n=0}^{\infty} \frac{(-\beta)^n}{n!} \langle \alpha |H^n| \alpha \rangle $$
