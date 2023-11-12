@@ -31,16 +31,18 @@ $ pip3 install numpy
 
 To run a simulation you will need to use the `run.sh` script and three input files. The first input file `read.in` contains the information about the system and MC parameters for the simulation.
 ```
-1, 8, 0.5, 1.0, 0.0, 0.05, PBC
+8, 0.5
 10000, 1000000, 10
 ```
 The first line is `L, N, S` and the second is `therm_cycles, mc_cycles, n_bins`. `L` is the number of unit cells, `S` is the quantum spin number.
 
 The second input file is `beta.in` which has the following structure
 ```
-2
+8
 0.5
 1.0
+2.0
+4.0
 ```
 The first line is the number of beta values in the file and the next lines are the beta values for the MC simulation.
 
