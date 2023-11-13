@@ -60,13 +60,14 @@ To see the plot of the exact result, run the python file `plot.py`.
 ```bash
 $ python3 plot.py /L8_toricode_S0.5.csv
 ```
-In the first folder `SEE-toricode excited state` is exact implementation of SSE method for the excited toricode model.
+The second folder, titled "SEE-toricode excited state," contains the exact implementation of the SSE method for the excited toricode model. The model is described by the Hamiltonian:
 
-$$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p  + 2A_v$$
+$$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p + 2A_v$$
 
-where $A_v$ is $A_s$ operator at the speciific vertex $v$. By investigating this model we could explore how far the sign problem would influence the out come of excited toricode model SSE simulation.
+Here, $A_v$ represents the $A_s$ operator at a specific vertex $v$. By studying this model, we can explore the extent to which the sign problem affects the results of the excited toricode model SSE simulation.
 
-Using the same approach as above to run the files, we will see the outcome in the figures.
+In the third folder, named "SEE-toricode excited state_cure," we demonstrate a method to address the sign problem in the Toric-code excited state by applying a basis change.
+To observe the outcomes illustrated in the figures, you can employ the same approach as mentioned above to run the files.
 
 [1] - "Stochastic Series Expansion Methods", Sandvik. Anders W., 2019,  http://arxiv.org/abs/1909.10591
 
