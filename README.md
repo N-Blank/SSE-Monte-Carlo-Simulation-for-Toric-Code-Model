@@ -69,6 +69,9 @@ where $A_v$ is $A_s$ operator at the speciific vertex $v$. By investigating this
 Using the same approach as above to run the files, we will see the outcome in the figures.
 
 [1] - "Stochastic Series Expansion Methods", Sandvik. Anders W., 2019,  http://arxiv.org/abs/1909.10591
+
 [2] - "Stochastic Series Expansion Quantum Monte Carlo", Melko. Roger G., 2013, Springer Berlin Heidelberg, https://link.springer.com/10.1007/978-3-642-35106-8_7
+
 [3] - "Fault-tolerant quantum computation by anyons", Kitaev,A. Yu., 2003, Annals of Physics, http://arxiv.org/abs/quant-ph/9707021
+
 [1] - "Directed loop updates for quantum lattice models", Olav F. Syljuåsen, 2003, Phys. Rev. E 67, 046701, https://doi.org/10.1103/PhysRevE.67.046701
