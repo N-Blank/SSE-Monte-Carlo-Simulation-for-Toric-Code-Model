@@ -1,6 +1,6 @@
 # SSE-Monte-Carlo-Simulation-for-Toric-Code-Model
 
-Implementation of Stochastic Series Expansion (SSE) Monte Carlo method for the toricode model. This version uses the Belt Loops [1] method for the loop update.
+The first folder `SEE-toricode` is exact implementation of Stochastic Series Expansion (SSE) Monte Carlo method for the toricode model. This version uses the Belt Loops [1] method for the loop update.
 The Hamiltonian of the simulated system is given by
 
 $$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p $$
@@ -56,5 +56,14 @@ to get more information about the arguments. The most important ones are `-n <n_
 ```bash
 $ ./run.sh -n 5 
 ```
+To see the plot of the exact result, run the python file `plot.py`.
+```bash
+$ python3 plot.py /L8_toricode_S0.5.csv
+```
+In the first folder `SEE-toricode excited state` is exact implementation of SSE method for the excited toricode model.
+$$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p  + 2A_v$$
+where $A_v$ is $A_s$ operator at the speciific vertex $v$. By investigating this model we could explore how far the sign problem would influence the out come of excited toricode model SSE simulation.
+
+Using the same approach as above to run the files, we will see the out come in the figures.
 
 [1] - "Directed loop updates for quantum lattice models", Olav F. Syljuåsen, 2003, Phys. Rev. E 67, 046701, https://doi.org/10.1103/PhysRevE.67.046701
