@@ -166,13 +166,13 @@ char *write_outputs(sampled_quantities *samples,
             samples->S_std[t_idx]);
         }
         
-        for (int t_idx = 0; t_idx < samples->betas; t_idx++) {
-            fprintf(output_file, "beta\n");
-            fprintf(output_file, "%lf\n", samples->beta_vals[t_idx]);
-            fprintf(output_file, "corr_mean,corr_std\n");
-            for (int i = 0; i < L; i++) {
-                fprintf(output_file, "%lf,%lf\n", samples->corr_mean[t_idx][i], samples->corr_std[t_idx][i]);
-            }
+        // for (int t_idx = 0; t_idx < samples->betas; t_idx++) {
+        //     fprintf(output_file, "beta\n");
+        //     fprintf(output_file, "%lf\n", samples->beta_vals[t_idx]);
+        //     fprintf(output_file, "corr_mean,corr_std\n");
+        //     for (int i = 0; i < L; i++) {
+        //         fprintf(output_file, "%lf,%lf\n", samples->corr_mean[t_idx][i], samples->corr_std[t_idx][i]);
+        //     }
         }
 
 
@@ -215,10 +215,10 @@ char *write_outputs(sampled_quantities *samples,
             }
         }
 #endif // L_HH
-    } else {
-        printf("Error in opening the %s file. \n", file_name);
-        exit(1);
-    }
+    // } else {
+    //     printf("Error in opening the %s file. \n", file_name);
+    //     exit(1);
+    // }
 
     fclose(output_file);
     return file_name;
