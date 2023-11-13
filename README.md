@@ -61,7 +61,9 @@ To see the plot of the exact result, run the python file `plot.py`.
 $ python3 plot.py /L8_toricode_S0.5.csv
 ```
 In the first folder `SEE-toricode excited state` is exact implementation of SSE method for the excited toricode model.
+
 $$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p  + 2A_v$$
+
 where $A_v$ is $A_s$ operator at the speciific vertex $v$. By investigating this model we could explore how far the sign problem would influence the out come of excited toricode model SSE simulation.
 
 Using the same approach as above to run the files, we will see the out come in the figures.
