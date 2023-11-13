@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#!/usr/bin/env python3
+
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -37,11 +39,11 @@ plt.legend()
 # plt.ylabel(r"$C$")
 # plt.legend()
 
-plt.subplot(3, 3, 3)
-plt.errorbar(sampled["T"], sampled["corr_mean"][:, 0], sampled["corr_std"][:, 0], fmt=".--")
-plt.xlabel(r"$T$")
-plt.ylabel(r"$C(0, 0)$")
-plt.legend()
+# plt.subplot(3, 3, 3)
+# plt.errorbar(sampled["T"], sampled["corr_mean"][:, 0], sampled["corr_std"][:, 0], fmt=".--")
+# plt.xlabel(r"$T$")
+# plt.ylabel(r"$C(0, 0)$")
+# plt.legend()
 
 plt.subplot(3, 3, 4)
 plt.errorbar(sampled["T"], sampled["m2s"], sampled["m2s_std"], fmt=".--")
@@ -79,12 +81,12 @@ plt.xlabel(r"$T$")
 plt.ylabel(r"$\chi$")
 plt.legend()
 
-plt.figure(2)
-for j, T in enumerate(sampled["T"]):    
-    plt.errorbar(np.arange(sim_info["L"]), sampled["corr_mean"][j, :], sampled["corr_std"][j, :], fmt=".--", label=fr"$T={T}$")
-    plt.xlabel(r"$i$")
-    plt.ylabel(r"$C(0, i)$")
-    plt.legend()
+# plt.figure(2)
+# for j, T in enumerate(sampled["T"]):    
+#     plt.errorbar(np.arange(sim_info["L"]), sampled["corr_mean"][j, :], sampled["corr_std"][j, :], fmt=".--", label=fr"$T={T}$")
+#     plt.xlabel(r"$i$")
+#     plt.ylabel(r"$C(0, i)$")
+#     plt.legend()
 
 if sim_info["n_k"] != 0:
     plt.figure(3)
