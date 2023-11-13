@@ -76,3 +76,5 @@ To observe the outcomes illustrated in the figures, you can employ the same appr
 [3] - "Fault-tolerant quantum computation by anyons", Kitaev,A. Yu., 2003, Annals of Physics, http://arxiv.org/abs/quant-ph/9707021
 
 [4] - "Directed loop updates for quantum lattice models", Olav F. Syljuåsen, 2003, Phys. Rev. E 67, 046701, https://doi.org/10.1103/PhysRevE.67.046701
+
+[5] - "Sign Problem in Quantum Monte Carlo Simulation", Gaopei Pan, Zi Yang Meng, 2022, https://arxiv.org/pdf/2204.08777.pdf
