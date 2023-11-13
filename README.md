@@ -66,6 +66,6 @@ $$ H = - \sum_{\langle s \rangle} A_s - \sum_{\langle p \rangle} B_p  + 2A_v$$
 
 where $A_v$ is $A_s$ operator at the speciific vertex $v$. By investigating this model we could explore how far the sign problem would influence the out come of excited toricode model SSE simulation.
 
-Using the same approach as above to run the files, we will see the out come in the figures.
+Using the same approach as above to run the files, we will see the outcome in the figures.
 
 [1] - "Directed loop updates for quantum lattice models", Olav F. Syljuåsen, 2003, Phys. Rev. E 67, 046701, https://doi.org/10.1103/PhysRevE.67.046701
