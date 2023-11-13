@@ -80,17 +80,17 @@ def read_sse_output(filename):
             
             sampled["T"][j] = 1.0 / sampled["beta"][j]
         
-        # read equal time spin-spin correlation function
-        sampled["corr_mean"] = np.zeros((sim_info["n_betas"], sim_info["L"]))
-        sampled["corr_std"] = np.zeros((sim_info["n_betas"], sim_info["L"]))
+        # # read equal time spin-spin correlation function
+        # sampled["corr_mean"] = np.zeros((sim_info["n_betas"], sim_info["L"]))
+        # sampled["corr_std"] = np.zeros((sim_info["n_betas"], sim_info["L"]))
         
-        for j in range(sim_info["n_betas"]):
-            file.readline()
-            file.readline()
-            file.readline()
+        # for j in range(sim_info["n_betas"]):
+        #     file.readline()
+        #     file.readline()
+        #     file.readline()
             
-            for i in range(sim_info["L"]):
-                sampled["corr_mean"][j, i], sampled["corr_std"][j, i] = [float(x) for x in file.readline().strip().split(',')]
+        #     for i in range(sim_info["L"]):
+        #         sampled["corr_mean"][j, i], sampled["corr_std"][j, i] = [float(x) for x in file.readline().strip().split(',')]
 
         # spin conductivity
         if sim_info["n_k"] != 0 and sim_info["cond"] != ".":
